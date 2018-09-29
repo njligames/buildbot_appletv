@@ -1,0 +1,7 @@
+_CPack_Packages/
+build/
+install/
+install_manifest_Devel.txt
+install_manifest_Unspecified.txt
+libNJLIC.dylib
+
