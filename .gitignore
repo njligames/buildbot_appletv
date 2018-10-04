@@ -4,4 +4,11 @@ install/
 install_manifest_Devel.txt
 install_manifest_Unspecified.txt
 libNJLIC.dylib
+Debug-appletvos/
+Debug-appletvsimulator/
+NJLIC.build/
+NJLIC.xcodeproj/project.xcworkspace/
+NJLIC.xcodeproj/xcuserdata/
+doc/
+tagfile
 
