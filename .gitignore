@@ -11,4 +11,6 @@ NJLIC.xcodeproj/project.xcworkspace/
 NJLIC.xcodeproj/xcuserdata/
 doc/
 tagfile
+Release-appletvos/
+Release-appletvsimulator/
 
