@@ -7,4 +7,4 @@ all: \
 
 /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/CMakeFiles/NJLIC-documentation: 
 	echo "Generating API documentation with Doxygen"
-	cd /Users/jamesfolk/Work/test_project_repo/buildbot_appletv && /Applications/Doxygen.app/Contents/Resources/doxygen /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Doxyfile
+	cd /Users/jamesfolk/Work/test_project_repo/buildbot_appletv && /usr/local/bin/doxygen /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Doxyfile

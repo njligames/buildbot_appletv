@@ -1,6 +1,6 @@
 # sdl pkg-config source file
 
-prefix=/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/install/Debug
+prefix=/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/install/MinSizeRel
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
