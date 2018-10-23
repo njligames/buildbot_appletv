@@ -13,4 +13,10 @@ doc/
 tagfile
 Release-appletvos/
 Release-appletvsimulator/
+MinSizeRel-appletvos/
+NJLIC-1.0.1--tvos.dmg
+
+MinSizeRel-appletvsimulator/
+.DS_Store
+
 

@@ -513,13 +513,25 @@ THIRDPARTY_BULLET3_ENABLED:BOOL=ON
 THIRDPARTY_BULLET3_INCLUDE_URL:STRING=https://www.dropbox.com/s/f2zfpkdx2agtk00/libbullet3_includes.tar.gz?dl=0
 
 //The URL for Release Bullet3
+THIRDPARTY_BULLET3_MINSIZEREL_URL:STRING=https://www.dropbox.com/s/352x3l9t37tk4ee/libbullet3_appletv_Release-appletvos.tar.gz?dl=0
+
+//The URL for Release Bullet3
 THIRDPARTY_BULLET3_RELEASE_URL:STRING=https://www.dropbox.com/s/352x3l9t37tk4ee/libbullet3_appletv_Release-appletvos.tar.gz?dl=0
+
+//The URL for Release Bullet3
+THIRDPARTY_BULLET3_RELWITHDEBINFO_URL:STRING=https://www.dropbox.com/s/pzogh82wils711t/libbullet3_appletv_Debug-appletvos.tar.gz?dl=0
 
 //The URL for Debug Bullet3
 THIRDPARTY_BULLET3_SIMULATOR_DEBUG_URL:STRING=https://www.dropbox.com/s/hc66vts08mi6zk9/libbullet3_appletv_Debug-appletvsimulator.tar.gz?dl=0
 
+//The URL for Release Bullet3 in the Simulator
+THIRDPARTY_BULLET3_SIMULATOR_MINSIZEREL_URL:STRING=https://www.dropbox.com/s/honabu80a0byyfa/libbullet3_appletv_Release-appletvsimulator.tar.gz?dl=0
+
 //The URL for Release Bullet3
 THIRDPARTY_BULLET3_SIMULATOR_RELEASE_URL:STRING=https://www.dropbox.com/s/honabu80a0byyfa/libbullet3_appletv_Release-appletvsimulator.tar.gz?dl=0
+
+//The URL for Release Bullet3 in the Simulator
+THIRDPARTY_BULLET3_SIMULATOR_RELWITHDEBINFO_URL:STRING=https://www.dropbox.com/s/hc66vts08mi6zk9/libbullet3_appletv_Debug-appletvsimulator.tar.gz?dl=0
 
 //The URL for include Bullet3
 THIRDPARTY_DEBUG-DRAW_INCLUDE_URL:STRING=https://www.dropbox.com/s/c405ev7l3d0ruvb/libdebug-draw_includes.tar.gz?dl=0
@@ -543,13 +555,25 @@ THIRDPARTY_IMGUIZMO_ENABLED:BOOL=ON
 THIRDPARTY_IMGUIZMO_INCLUDE_URL:STRING=https://www.dropbox.com/s/vi20so6cykm4zxx/libimguizmo_includes.tar.gz?dl=0
 
 //The URL for Release Bullet3
+THIRDPARTY_IMGUIZMO_MINSIZEREL_URL:STRING=https://www.dropbox.com/s/u2i8accis3il4mi/libimguizmo_appletv_Release-appletvos.tar.gz?dl=0
+
+//The URL for Release Bullet3
 THIRDPARTY_IMGUIZMO_RELEASE_URL:STRING=https://www.dropbox.com/s/u2i8accis3il4mi/libimguizmo_appletv_Release-appletvos.tar.gz?dl=0
+
+//The URL for Release Bullet3
+THIRDPARTY_IMGUIZMO_RELWITHDEBINFO_URL:STRING=https://www.dropbox.com/s/nb6sxnhxj4c8h6t/libimguizmo_appletv_Debug-appletvos.tar.gz?dl=0
 
 //The URL for Debug Bullet3
 THIRDPARTY_IMGUIZMO_SIMULATOR_DEBUG_URL:STRING=https://www.dropbox.com/s/l30pt40upskog2k/libimguizmo_appletv_Debug-appletvsimulator.tar.gz?dl=0
 
+//The URL for Release Bullet3 in the Simulator
+THIRDPARTY_IMGUIZMO_SIMULATOR_MINSIZEREL_URL:STRING=https://www.dropbox.com/s/xl69c0lgjpal8vw/libimguizmo_appletv_Release-appletvsimulator.tar.gz?dl=0
+
 //The URL for Release Bullet3
 THIRDPARTY_IMGUIZMO_SIMULATOR_RELEASE_URL:STRING=https://www.dropbox.com/s/xl69c0lgjpal8vw/libimguizmo_appletv_Release-appletvsimulator.tar.gz?dl=0
+
+//The URL for Release Bullet3 in the Simulator
+THIRDPARTY_IMGUIZMO_SIMULATOR_RELWITHDEBINFO_URL:STRING=https://www.dropbox.com/s/l30pt40upskog2k/libimguizmo_appletv_Debug-appletvsimulator.tar.gz?dl=0
 
 //The URL for Debug Bullet3
 THIRDPARTY_IMGUI_DEBUG_URL:STRING=https://www.dropbox.com/s/spejpx7xjurdy6b/libimgui_appletv_Debug-appletvos.tar.gz?dl=0
@@ -561,13 +585,25 @@ THIRDPARTY_IMGUI_ENABLED:BOOL=ON
 THIRDPARTY_IMGUI_INCLUDE_URL:STRING=https://www.dropbox.com/s/xhauwvyy48g5dd7/libimgui_includes.tar.gz?dl=0
 
 //The URL for Release Bullet3
+THIRDPARTY_IMGUI_MINSIZEREL_URL:STRING=https://www.dropbox.com/s/hpquraa8ghdhb9g/libimgui_appletv_Release-appletvos.tar.gz?dl=0
+
+//The URL for Release Bullet3
 THIRDPARTY_IMGUI_RELEASE_URL:STRING=https://www.dropbox.com/s/hpquraa8ghdhb9g/libimgui_appletv_Release-appletvos.tar.gz?dl=0
+
+//The URL for Release Bullet3
+THIRDPARTY_IMGUI_RELWITHDEBINFO_URL:STRING=https://www.dropbox.com/s/spejpx7xjurdy6b/libimgui_appletv_Debug-appletvos.tar.gz?dl=0
 
 //The URL for Debug Bullet3
 THIRDPARTY_IMGUI_SIMULATOR_DEBUG_URL:STRING=https://www.dropbox.com/s/kwzf7xfoic59qtl/libimgui_appletv_Debug-appletvsimulator.tar.gz?dl=0
 
+//The URL for Release Bullet3 in the Simulator
+THIRDPARTY_IMGUI_SIMULATOR_MINSIZEREL_URL:STRING=https://www.dropbox.com/s/9yybtreh53tskbh/libimgui_appletv_Release-appletvsimulator.tar.gz?dl=0
+
 //The URL for Release Bullet3
 THIRDPARTY_IMGUI_SIMULATOR_RELEASE_URL:STRING=https://www.dropbox.com/s/9yybtreh53tskbh/libimgui_appletv_Release-appletvsimulator.tar.gz?dl=0
+
+//The URL for Release Bullet3 in the Simulator
+THIRDPARTY_IMGUI_SIMULATOR_RELWITHDEBINFO_URL:STRING=https://www.dropbox.com/s/kwzf7xfoic59qtl/libimgui_appletv_Debug-appletvsimulator.tar.gz?dl=0
 
 //Use JsonCPP library
 THIRDPARTY_JSONCPP_ENABLED:BOOL=OFF
@@ -582,13 +618,25 @@ THIRDPARTY_OGG_DEBUG_URL:STRING=https://www.dropbox.com/s/5ngl2398a7h3s8o/libogg
 THIRDPARTY_OGG_INCLUDE_URL:STRING=https://www.dropbox.com/s/agc7zmqg9m64x9i/libogg_includes.tar.gz?dl=0
 
 //The URL for Release Bullet3
+THIRDPARTY_OGG_MINSIZEREL_URL:STRING=https://www.dropbox.com/s/vxvg5putsssgdvw/libogg_appletv_Release-appletvos.tar.gz?dl=0
+
+//The URL for Release Bullet3
 THIRDPARTY_OGG_RELEASE_URL:STRING=https://www.dropbox.com/s/vxvg5putsssgdvw/libogg_appletv_Release-appletvos.tar.gz?dl=0
+
+//The URL for Release Bullet3
+THIRDPARTY_OGG_RELWITHDEBINFO_URL:STRING=https://www.dropbox.com/s/5ngl2398a7h3s8o/libogg_appletv_Debug-appletvos.tar.gz?dl=0
 
 //The URL for Debug Bullet3
 THIRDPARTY_OGG_SIMULATOR_DEBUG_URL:STRING=https://www.dropbox.com/s/pvwpwxqj7zyct4j/libogg_appletv_Debug-appletvsimulator.tar.gz?dl=0
 
+//The URL for Release Bullet3 in the Simulator
+THIRDPARTY_OGG_SIMULATOR_MINSIZEREL_URL:STRING=https://www.dropbox.com/s/e00h59xm39fk761/libogg_appletv_Release-appletvsimulator.tar.gz?dl=0
+
 //The URL for Release Bullet3
 THIRDPARTY_OGG_SIMULATOR_RELEASE_URL:STRING=https://www.dropbox.com/s/e00h59xm39fk761/libogg_appletv_Release-appletvsimulator.tar.gz?dl=0
+
+//The URL for Release Bullet3 in the Simulator
+THIRDPARTY_OGG_SIMULATOR_RELWITHDEBINFO_URL:STRING=https://www.dropbox.com/s/pvwpwxqj7zyct4j/libogg_appletv_Debug-appletvsimulator.tar.gz?dl=0
 
 //The URL for Debug Bullet3
 THIRDPARTY_SDL2_DEBUG_URL:STRING=https://www.dropbox.com/s/b6g40wkyp5v9f0j/libsdl2_ios_Debug-appletvos.tar.gz?dl=0
@@ -600,13 +648,25 @@ THIRDPARTY_SDL2_ENABLED:BOOL=ON
 THIRDPARTY_SDL2_INCLUDE_URL:STRING=https://www.dropbox.com/s/ninle2iwebrcpdq/libsdl_include.tar.gz?dl=0
 
 //The URL for Release Bullet3
+THIRDPARTY_SDL2_MINSIZEREL_URL:STRING=https://www.dropbox.com/s/ujjsr0wqvmms5d2/libsdl2_ios_Release-appletvos.tar.gz?dl=0
+
+//The URL for Release Bullet3
 THIRDPARTY_SDL2_RELEASE_URL:STRING=https://www.dropbox.com/s/ujjsr0wqvmms5d2/libsdl2_ios_Release-appletvos.tar.gz?dl=0
+
+//The URL for Release Bullet3
+THIRDPARTY_SDL2_RELWITHDEBINFO_URL:STRING=https://www.dropbox.com/s/b6g40wkyp5v9f0j/libsdl2_ios_Debug-appletvos.tar.gz?dl=0
 
 //The URL for Debug Bullet3
 THIRDPARTY_SDL2_SIMULATOR_DEBUG_URL:STRING=https://www.dropbox.com/s/4jaimt66kl26x6s/libsdl2_ios_Debug-appletvsimulator.tar.gz?dl=0
 
+//The URL for Release Bullet3 in the Simulator
+THIRDPARTY_SDL2_SIMULATOR_MINSIZEREL_URL:STRING=https://www.dropbox.com/s/2j8078to0cy9qa9/libsdl2_ios_Release-appletvsimulator.tar.gz?dl=0
+
 //The URL for Release Bullet3
 THIRDPARTY_SDL2_SIMULATOR_RELEASE_URL:STRING=https://www.dropbox.com/s/2j8078to0cy9qa9/libsdl2_ios_Release-appletvsimulator.tar.gz?dl=0
+
+//The URL for Release Bullet3 in the Simulator
+THIRDPARTY_SDL2_SIMULATOR_RELWITHDEBINFO_URL:STRING=https://www.dropbox.com/s/4jaimt66kl26x6s/libsdl2_ios_Debug-appletvsimulator.tar.gz?dl=0
 
 //The URL for include Bullet3
 THIRDPARTY_STBIMAGES_INCLUDE_URL:STRING=https://www.dropbox.com/s/u9c4ruts1wac41k/stb_image_includes.tar.gz?dl=0
@@ -618,13 +678,25 @@ THIRDPARTY_VORBIS_DEBUG_URL:STRING=https://www.dropbox.com/s/tyvufew5oo1vxm1/lib
 THIRDPARTY_VORBIS_INCLUDE_URL:STRING=https://www.dropbox.com/s/erbp79zazwqsknv/libvorbis_includes.tar.gz?dl=0
 
 //The URL for Release Bullet3
+THIRDPARTY_VORBIS_MINSIZEREL_URL:STRING=https://www.dropbox.com/s/6e2aktv98qr1d7e/libvorbis_appletv_Release-appletvos.tar.gz?dl=0
+
+//The URL for Release Bullet3
 THIRDPARTY_VORBIS_RELEASE_URL:STRING=https://www.dropbox.com/s/6e2aktv98qr1d7e/libvorbis_appletv_Release-appletvos.tar.gz?dl=0
+
+//The URL for Release Bullet3
+THIRDPARTY_VORBIS_RELWITHDEBINFO_URL:STRING=https://www.dropbox.com/s/tyvufew5oo1vxm1/libvorbis_appletv_Debug-appletvos.tar.gz?dl=0
 
 //The URL for Debug Bullet3
 THIRDPARTY_VORBIS_SIMULATOR_DEBUG_URL:STRING=https://www.dropbox.com/s/kbf62k5so9nydmz/libvorbis_appletv_Debug-appletvsimulator.tar.gz?dl=0
 
+//The URL for Release Bullet3 in the Simulator
+THIRDPARTY_VORBIS_SIMULATOR_MINSIZEREL_URL:STRING=https://www.dropbox.com/s/mnl3flvt4hb0xfk/libvorbis_appletv_Release-appletvsimulator.tar.gz?dl=0
+
 //The URL for Release Bullet3
 THIRDPARTY_VORBIS_SIMULATOR_RELEASE_URL:STRING=https://www.dropbox.com/s/mnl3flvt4hb0xfk/libvorbis_appletv_Release-appletvsimulator.tar.gz?dl=0
+
+//The URL for Release Bullet3 in the Simulator
+THIRDPARTY_VORBIS_SIMULATOR_RELWITHDEBINFO_URL:STRING=https://www.dropbox.com/s/kbf62k5so9nydmz/libvorbis_appletv_Debug-appletvsimulator.tar.gz?dl=0
 
 //No help, variable specified on the command line.
 TVOS:BOOL=TRUE
@@ -746,7 +818,7 @@ vorbis_URL_INCLUDE:STRING=https://www.dropbox.com/s/erbp79zazwqsknv/libvorbis_in
 ########################
 
 //Stored Xcode object GUID
-ALL_BUILD_GUID_CMAKE:INTERNAL=F828A370FBAA4A4CA596CE94
+ALL_BUILD_GUID_CMAKE:INTERNAL=C7B2522B315949BDB23C6FE4
 //ADVANCED property for variable: BULLET3_INCLUDE_DIR
 BULLET3_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -1163,21 +1235,21 @@ IMGUIZMO_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: IMGUI_INCLUDE_DIR
 IMGUI_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //Stored Xcode object GUID
-NJLIC-documentation_GUID_CMAKE:INTERNAL=9550700B247F4588B0C397A3
+NJLIC-documentation_GUID_CMAKE:INTERNAL=06299C684EDA4A1A99A313FD
 //Stored Xcode object GUID
-NJLIC-exe_GUID_CMAKE:INTERNAL=C286FAB2DA804D2ABB54A9A4
+NJLIC-exe_GUID_CMAKE:INTERNAL=44A21A9DF66142E5B363901E
 //Stored Xcode object GUID
-NJLIC-lua-swig-bullet3-static_GUID_CMAKE:INTERNAL=BABB11D1E3814FA3A04711BD
+NJLIC-lua-swig-bullet3-static_GUID_CMAKE:INTERNAL=1DD681ADF72941F3836F243E
 //Stored Xcode object GUID
-NJLIC-lua-swig-njlic-static_GUID_CMAKE:INTERNAL=B8D7D43D4C12480697DF92EE
+NJLIC-lua-swig-njlic-static_GUID_CMAKE:INTERNAL=974E035D5DC449D1AAC1CA07
 //Stored Xcode object GUID
-NJLIC-static_GUID_CMAKE:INTERNAL=622B18E0BDFB4FFC91BC8779
+NJLIC-static_GUID_CMAKE:INTERNAL=85C5CD3A3EA64EABB3847B36
 //Stored Xcode object GUID
-NJLICFramework_GUID_CMAKE:INTERNAL=B58D61CFD59C47A79F362211
+NJLICFramework_GUID_CMAKE:INTERNAL=1BC24CE142364C71AE825219
 //STRINGS property for variable: NJLIC_GRAPHICS_PLATFORM
 NJLIC_GRAPHICS_PLATFORM-STRINGS:INTERNAL=opengl_es_2;opengl_es_3
 //Stored Xcode object GUID
-NJLIC_GUID_CMAKE:INTERNAL=1E5B9C9B02AE467D994FFBCA
+NJLIC_GUID_CMAKE:INTERNAL=0F45B1D0C5694269839A5589
 //STRINGS property for variable: NJLIC_SOUND_PLATFORM
 NJLIC_SOUND_PLATFORM-STRINGS:INTERNAL=openal;fmod;sdl
 //ADVANCED property for variable: OGG_INCLUDE_DIR
@@ -1185,7 +1257,7 @@ OGG_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //Stored Xcode object GUID
-PROJECT_NJLIC_GUID_CMAKE:INTERNAL=83C454693EDC4D52A5F52EE4
+PROJECT_NJLIC_GUID_CMAKE:INTERNAL=94BC526E306F460BA08CF1F8
 //ADVANCED property for variable: SDL2_INCLUDE_DIR
 SDL2_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //CHECK_TYPE_SIZE: sizeof(size_t)
@@ -1201,17 +1273,17 @@ SWIG_VERSION-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: VORBIS_INCLUDE_DIR
 VORBIS_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //Stored Xcode object GUID
-ZERO_CHECK_GUID_CMAKE:INTERNAL=F93CDB7523344C0C94E79347
+ZERO_CHECK_GUID_CMAKE:INTERNAL=31D92F773D4A408D9D07B999
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/install/MinSizeRel
 //Stored Xcode object GUID
-clang-format_GUID_CMAKE:INTERNAL=4E0B862DAE5444A588AC7A2D
+clang-format_GUID_CMAKE:INTERNAL=C9F08007BEBE46498609C7AF
 //Stored Xcode object GUID
-cppcheck_GUID_CMAKE:INTERNAL=F2D781F448FE474CBEA67239
+cppcheck_GUID_CMAKE:INTERNAL=261BAE49321448228BF3E4FA
 //Stored Xcode object GUID
-install_GUID_CMAKE:INTERNAL=B68CDEBE4A2D48FEB51C08A5
+install_GUID_CMAKE:INTERNAL=6D6AAF70B7D94B639E1ABBBE
 //Stored Xcode object GUID
-package_GUID_CMAKE:INTERNAL=80DB42B1C10C499B94309425
+package_GUID_CMAKE:INTERNAL=3D7E202E40FE437FA943CAA5
 //Stored Xcode object GUID
-uninstall_GUID_CMAKE:INTERNAL=6A31B208E1944673BA7ED085
+uninstall_GUID_CMAKE:INTERNAL=79EE5C3C7990495EB0FEC461
 
