@@ -38,7 +38,7 @@ set(CPACK_DMG_BACKGROUND_IMAGE "/Users/jamesfolk/Work/test_project_repo/buildbot
 set(CPACK_DMG_DISABLE_APPLICATIONS_SYMLINK "ON")
 set(CPACK_GENERATOR "DragNDrop")
 set(CPACK_INSTALL_CMAKE_PROJECTS "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv;NJLIC;ALL;/")
-set(CPACK_INSTALL_PREFIX "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/install/Release")
+set(CPACK_INSTALL_PREFIX "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/install/Debug")
 set(CPACK_MODULE_PATH "/Users/jamesfolk/Work/test_project_repo/cmake;/Users/jamesfolk/Work/test_project_repo/cmake;/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/njligames-njlic_engine/cmake;/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/njligames-njlic_engine/cmake;/Users/jamesfolk/Work/test_project_repo/cmake;/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/njligames-njlic_engine/cmake")
 set(CPACK_NSIS_DISPLAY_NAME "NJLIC")
 set(CPACK_NSIS_INSTALLER_ICON_CODE "")
