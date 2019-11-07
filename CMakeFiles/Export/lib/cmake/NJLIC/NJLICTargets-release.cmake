@@ -35,6 +35,16 @@ set_target_properties(NJLIC::NJLICFramework PROPERTIES
 list(APPEND _IMPORT_CHECK_TARGETS NJLIC::NJLICFramework )
 list(APPEND _IMPORT_CHECK_FILES_FOR_NJLIC::NJLICFramework "${_IMPORT_PREFIX}/framework/NJLICFramework.framework/NJLICFramework" )
 
+# Import target "NJLIC::NJLIC-lua-swig-glm-static" for configuration "Release"
+set_property(TARGET NJLIC::NJLIC-lua-swig-glm-static APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(NJLIC::NJLIC-lua-swig-glm-static PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
+  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/lib/libNJLIC-lua-swig-glm-static.a"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS NJLIC::NJLIC-lua-swig-glm-static )
+list(APPEND _IMPORT_CHECK_FILES_FOR_NJLIC::NJLIC-lua-swig-glm-static "${_IMPORT_PREFIX}/lib/libNJLIC-lua-swig-glm-static.a" )
+
 # Import target "NJLIC::NJLIC-lua-swig-bullet3-static" for configuration "Release"
 set_property(TARGET NJLIC::NJLIC-lua-swig-bullet3-static APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(NJLIC::NJLIC-lua-swig-bullet3-static PROPERTIES

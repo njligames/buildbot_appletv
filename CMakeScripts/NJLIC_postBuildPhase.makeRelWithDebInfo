@@ -7,4 +7,4 @@ all: \
 
 NJLIC_buildpart_0: 
 	echo "Creating symlinks"
-	/usr/local/bin/cmake -E cmake_symlink_library /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC.dylib /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC.dylib /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC.dylib
+	/usr/local/Cellar/cmake/3.15.4/bin/cmake -E cmake_symlink_library /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC.dylib /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC.dylib /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC.dylib

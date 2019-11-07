@@ -7,4 +7,4 @@ all: \
 
 /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/CMakeFiles/uninstall: 
 	echo ""
-	/usr/local/bin/cmake -P /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/cmake_uninstall.cmake
+	/usr/local/Cellar/cmake/3.15.4/bin/cmake -P /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/cmake_uninstall.cmake

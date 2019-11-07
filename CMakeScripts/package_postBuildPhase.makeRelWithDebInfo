@@ -6,4 +6,4 @@ all: \
 
 
 package_buildpart_0: 
-	cd /Users/jamesfolk/Work/test_project_repo/buildbot_appletv && /usr/local/bin/cpack -C $(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) --config ./CPackConfig.cmake
+	cd /Users/jamesfolk/Work/test_project_repo/buildbot_appletv && /usr/local/Cellar/cmake/3.15.4/bin/cpack -C $(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) --config ./CPackConfig.cmake

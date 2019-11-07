@@ -6,4 +6,4 @@ all: \
 
 
 install_buildpart_0: 
-	/usr/local/bin/cmake -DBUILD_TYPE=$(CONFIGURATION) -DEFFECTIVE_PLATFORM_NAME=$(EFFECTIVE_PLATFORM_NAME) -P cmake_install.cmake
+	/usr/local/Cellar/cmake/3.15.4/bin/cmake -DBUILD_TYPE=$(CONFIGURATION) -DEFFECTIVE_PLATFORM_NAME=$(EFFECTIVE_PLATFORM_NAME) -P cmake_install.cmake
