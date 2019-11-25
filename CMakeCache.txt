@@ -48,7 +48,7 @@ CLOCK_GETTIME:BOOL=OFF
 CMAKE_AR:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar
 
 //No help, variable specified on the command line.
-CMAKE_BUILD_TYPE:UNINITIALIZED=RelWithDebInfo
+CMAKE_BUILD_TYPE:UNINITIALIZED=Release
 
 //Semicolon separated list of supported configuration types, only
 // supports Debug, Release, MinSizeRel, and RelWithDebInfo, anything
@@ -146,7 +146,7 @@ CMAKE_INSTALL_NAME_TOOL:FILEPATH=/usr/bin/install_name_tool
 CMAKE_INSTALL_OLDINCLUDEDIR:PATH=/usr/include
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/install/RelWithDebInfo
+CMAKE_INSTALL_PREFIX:PATH=/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/install/Release
 
 //Run-time variable data (LOCALSTATEDIR/run)
 CMAKE_INSTALL_RUNSTATEDIR:PATH=
@@ -334,6 +334,9 @@ DOWNLOAD_TINYXML2_LIBRARY:BOOL=OFF
 //vorbis typedef
 DOWNLOAD_VORBIS_LIBRARY:BOOL=ON
 
+//zlib typedef
+DOWNLOAD_ZLIB_LIBRARY:BOOL=ON
+
 //Dot tool for use with Doxygen
 DOXYGEN_DOT_EXECUTABLE:FILEPATH=/usr/local/bin/dot
 
@@ -350,7 +353,7 @@ ESD:BOOL=OFF
 EXECUTABLE_GITHUB_ACCOUNT:STRING=njligames
 
 //No help, variable specified on the command line.
-EXECUTABLE_GITHUB_BRANCH:STRING=master
+EXECUTABLE_GITHUB_BRANCH:STRING=project/yappybirds
 
 //No help, variable specified on the command line.
 EXECUTABLE_GITHUB_REPOSITORY:STRING=njligames-njlic_engine
@@ -441,10 +444,10 @@ NAS:BOOL=OFF
 NAS_SHARED:BOOL=OFF
 
 //Dependencies for the target
-NJLIC-static_LIB_DEPENDS:STATIC=general;Bullet2FileLoader;general;Bullet3Collision;general;Bullet3Common;general;Bullet3Dynamics;general;Bullet3Geometry;general;Bullet3OpenCL_clew;general;BulletCollision;general;BulletDynamics;general;BulletFileLoader;general;BulletInverseDynamics;general;BulletInverseDynamicsUtils;general;BulletSoftBody;general;BulletWorldImporter;general;BulletXmlWorldImporter;general;ConvexDecomposition;general;GIMPACTUtils;general;HACD;general;LinearMath;general;imgui;general;ImGuizmo;general;ogg;general;vorbis;general;vorbisenc;general;vorbisfile;general;-framework OpenAL;general;-framework OpenGLES;general;m;general;iconv;general;-framework UIKit;general;-framework Foundation;general;-framework AVFoundation;general;-framework GameController;general;-framework CoreGraphics;general;-framework QuartzCore;general;-framework CoreVideo;general;-framework CoreAudio;general;-framework AudioToolbox;general;SDL2;general;NJLIC-lua-swig-njlic-static;general;NJLIC-lua-swig-bullet3-static;general;NJLIC-lua-swig-glm-static;
+NJLIC-static_LIB_DEPENDS:STATIC=general;Bullet2FileLoader;general;Bullet3Collision;general;Bullet3Common;general;Bullet3Dynamics;general;Bullet3Geometry;general;Bullet3OpenCL_clew;general;BulletCollision;general;BulletDynamics;general;BulletFileLoader;general;BulletInverseDynamics;general;BulletInverseDynamicsUtils;general;BulletSoftBody;general;BulletWorldImporter;general;BulletXmlWorldImporter;general;ConvexDecomposition;general;GIMPACTUtils;general;HACD;general;LinearMath;general;imgui;general;ImGuizmo;general;z;general;ogg;general;vorbis;general;vorbisenc;general;vorbisfile;general;-framework OpenAL;general;-framework OpenGLES;general;m;general;iconv;general;-framework UIKit;general;-framework Foundation;general;-framework AVFoundation;general;-framework GameController;general;-framework CoreGraphics;general;-framework QuartzCore;general;-framework CoreVideo;general;-framework CoreAudio;general;-framework AudioToolbox;general;SDL2;general;NJLIC-lua-swig-njlic;general;NJLIC-lua-swig-bullet3;
 
 //Dependencies for the target
-NJLICFramework_LIB_DEPENDS:STATIC=general;Bullet2FileLoader;general;Bullet3Collision;general;Bullet3Common;general;Bullet3Dynamics;general;Bullet3Geometry;general;Bullet3OpenCL_clew;general;BulletCollision;general;BulletDynamics;general;BulletFileLoader;general;BulletInverseDynamics;general;BulletInverseDynamicsUtils;general;BulletSoftBody;general;BulletWorldImporter;general;BulletXmlWorldImporter;general;ConvexDecomposition;general;GIMPACTUtils;general;HACD;general;LinearMath;general;imgui;general;ImGuizmo;general;ogg;general;vorbis;general;vorbisenc;general;vorbisfile;general;-framework OpenAL;general;-framework OpenGLES;general;m;general;iconv;general;-framework UIKit;general;-framework Foundation;general;-framework AVFoundation;general;-framework GameController;general;-framework CoreGraphics;general;-framework QuartzCore;general;-framework CoreVideo;general;-framework CoreAudio;general;-framework AudioToolbox;general;SDL2;general;NJLIC-lua-swig-njlic-static;general;NJLIC-lua-swig-bullet3-static;general;NJLIC-lua-swig-glm-static;
+NJLICFramework_LIB_DEPENDS:STATIC=general;Bullet2FileLoader;general;Bullet3Collision;general;Bullet3Common;general;Bullet3Dynamics;general;Bullet3Geometry;general;Bullet3OpenCL_clew;general;BulletCollision;general;BulletDynamics;general;BulletFileLoader;general;BulletInverseDynamics;general;BulletInverseDynamicsUtils;general;BulletSoftBody;general;BulletWorldImporter;general;BulletXmlWorldImporter;general;ConvexDecomposition;general;GIMPACTUtils;general;HACD;general;LinearMath;general;imgui;general;ImGuizmo;general;z;general;ogg;general;vorbis;general;vorbisenc;general;vorbisfile;general;-framework OpenAL;general;-framework OpenGLES;general;m;general;iconv;general;-framework UIKit;general;-framework Foundation;general;-framework AVFoundation;general;-framework GameController;general;-framework CoreGraphics;general;-framework QuartzCore;general;-framework CoreVideo;general;-framework CoreAudio;general;-framework AudioToolbox;general;SDL2;general;NJLIC-lua-swig-njlic;general;NJLIC-lua-swig-bullet3;
 
 //Value Computed by CMake
 NJLIC_BINARY_DIR:STATIC=/Users/jamesfolk/Work/test_project_repo/buildbot_appletv
@@ -459,7 +462,7 @@ NJLIC_EXE:BOOL=ON
 NJLIC_GRAPHICS_PLATFORM:STRING=opengl_es_2
 
 //Dependencies for the target
-NJLIC_LIB_DEPENDS:STATIC=general;Bullet2FileLoader;general;Bullet3Collision;general;Bullet3Common;general;Bullet3Dynamics;general;Bullet3Geometry;general;Bullet3OpenCL_clew;general;BulletCollision;general;BulletDynamics;general;BulletFileLoader;general;BulletInverseDynamics;general;BulletInverseDynamicsUtils;general;BulletSoftBody;general;BulletWorldImporter;general;BulletXmlWorldImporter;general;ConvexDecomposition;general;GIMPACTUtils;general;HACD;general;LinearMath;general;imgui;general;ImGuizmo;general;ogg;general;vorbis;general;vorbisenc;general;vorbisfile;general;-framework OpenAL;general;-framework OpenGLES;general;m;general;iconv;general;-framework UIKit;general;-framework Foundation;general;-framework AVFoundation;general;-framework GameController;general;-framework CoreGraphics;general;-framework QuartzCore;general;-framework CoreVideo;general;-framework CoreAudio;general;-framework AudioToolbox;general;SDL2;general;NJLIC-lua-swig-njlic-static;general;NJLIC-lua-swig-bullet3-static;general;NJLIC-lua-swig-glm-static;
+NJLIC_LIB_DEPENDS:STATIC=general;Bullet2FileLoader;general;Bullet3Collision;general;Bullet3Common;general;Bullet3Dynamics;general;Bullet3Geometry;general;Bullet3OpenCL_clew;general;BulletCollision;general;BulletDynamics;general;BulletFileLoader;general;BulletInverseDynamics;general;BulletInverseDynamicsUtils;general;BulletSoftBody;general;BulletWorldImporter;general;BulletXmlWorldImporter;general;ConvexDecomposition;general;GIMPACTUtils;general;HACD;general;LinearMath;general;imgui;general;ImGuizmo;general;z;general;ogg;general;vorbis;general;vorbisenc;general;vorbisfile;general;-framework OpenAL;general;-framework OpenGLES;general;m;general;iconv;general;-framework UIKit;general;-framework Foundation;general;-framework AVFoundation;general;-framework GameController;general;-framework CoreGraphics;general;-framework QuartzCore;general;-framework CoreVideo;general;-framework CoreAudio;general;-framework AudioToolbox;general;SDL2;general;NJLIC-lua-swig-njlic;general;NJLIC-lua-swig-bullet3;
 
 //Build the swig module for NJLIC
 NJLIC_LUA_SWIG:BOOL=ON
@@ -783,6 +786,39 @@ THIRDPARTY_VORBIS_SIMULATOR_RELEASE_URL:STRING=https://www.dropbox.com/s/mnl3flv
 //The URL for Release Bullet3 in the Simulator
 THIRDPARTY_VORBIS_SIMULATOR_RELWITHDEBINFO_URL:STRING=https://www.dropbox.com/s/kbf62k5so9nydmz/libvorbis_appletv_Debug-appletvsimulator.tar.gz?dl=0
 
+//The URL for Debug Bullet3
+THIRDPARTY_ZLIB_DEBUG_URL:STRING=https://www.dropbox.com/s/y3mux26fdccclic/libzlib_appletv_Debug-appletvos.tar.gz?dl=0
+
+//Use ZLib library
+THIRDPARTY_ZLIB_DOWNLOAD:BOOL=ON
+
+//Use zlib library
+THIRDPARTY_ZLIB_ENABLED:BOOL=ON
+
+//The URL for include Bullet3
+THIRDPARTY_ZLIB_INCLUDE_URL:STRING=https://www.dropbox.com/s/9r6ej0lupnzkkpe/libzlib_include.tar.gz?dl=0
+
+//The URL for Release Bullet3
+THIRDPARTY_ZLIB_MINSIZEREL_URL:STRING=https://www.dropbox.com/s/arul9n52o0p56b2/libzlib_appletv_Release-appletvos.tar.gz?dl=0
+
+//The URL for Release Bullet3
+THIRDPARTY_ZLIB_RELEASE_URL:STRING=https://www.dropbox.com/s/arul9n52o0p56b2/libzlib_appletv_Release-appletvos.tar.gz?dl=0
+
+//The URL for Release Bullet3
+THIRDPARTY_ZLIB_RELWITHDEBINFO_URL:STRING=https://www.dropbox.com/s/y3mux26fdccclic/libzlib_appletv_Debug-appletvos.tar.gz?dl=0
+
+//The URL for Debug Bullet3
+THIRDPARTY_ZLIB_SIMULATOR_DEBUG_URL:STRING=https://www.dropbox.com/s/kumh6e99ux1jdoe/libzlib_appletv_Debug-appletvsimulator.tar.gz?dl=0
+
+//The URL for Release Bullet3 in the Simulator
+THIRDPARTY_ZLIB_SIMULATOR_MINSIZEREL_URL:STRING=https://www.dropbox.com/s/hqjdyyls2a6xp4l/libzlib_appletv_Release-appletvsimulator.tar.gz?dl=0
+
+//The URL for Release Bullet3
+THIRDPARTY_ZLIB_SIMULATOR_RELEASE_URL:STRING=https://www.dropbox.com/s/hqjdyyls2a6xp4l/libzlib_appletv_Release-appletvsimulator.tar.gz?dl=0
+
+//The URL for Release Bullet3 in the Simulator
+THIRDPARTY_ZLIB_SIMULATOR_RELWITHDEBINFO_URL:STRING=https://www.dropbox.com/s/kumh6e99ux1jdoe/libzlib_appletv_Debug-appletvsimulator.tar.gz?dl=0
+
 //No help, variable specified on the command line.
 TVOS:BOOL=TRUE
 
@@ -818,6 +854,9 @@ USE_TINYXML2_LIBRARY:BOOL=OFF
 
 //vorbis include
 USE_VORBIS_LIBRARY:BOOL=ON
+
+//zlib typedef
+USE_ZLIB_LIBRARY:BOOL=ON
 
 //Use Cocoa video driver
 VIDEO_COCOA:BOOL=ON
@@ -857,6 +896,9 @@ VIDEO_X11:BOOL=OFF
 
 //Path to a file.
 VORBIS_INCLUDE_DIR:PATH=/usr/local/include
+
+//Path to a file.
+ZLIB_INCLUDE_DIR:PATH=/usr/local/include
 
 //fmod include
 __FMOD__:BOOL=OFF
@@ -903,13 +945,16 @@ stbimages_URL_INCLUDE:STRING=https://www.dropbox.com/s/u9c4ruts1wac41k/stb_image
 //The URL for the include files for thirdparty/vorbis/lib/appletv/include
 vorbis_URL_INCLUDE:STRING=https://www.dropbox.com/s/erbp79zazwqsknv/libvorbis_includes.tar.gz?dl=0
 
+//The URL for the include files for thirdparty/zlib/lib/appletv/include
+zlib_URL_INCLUDE:STRING=https://www.dropbox.com/s/9r6ej0lupnzkkpe/libzlib_include.tar.gz?dl=0
+
 
 ########################
 # INTERNAL cache entries
 ########################
 
 //Stored Xcode object GUID
-ALL_BUILD_GUID_CMAKE:INTERNAL=A0877CF5F49D4047B8D93BE9
+ALL_BUILD_GUID_CMAKE:INTERNAL=561B76ECE45B4793A153DE8D
 //ADVANCED property for variable: BULLET3_INCLUDE_DIR
 BULLET3_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -1328,23 +1373,21 @@ IMGUIZMO_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: IMGUI_INCLUDE_DIR
 IMGUI_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //Stored Xcode object GUID
-NJLIC-documentation_GUID_CMAKE:INTERNAL=B428EC71DF3C46D48F064BCC
+NJLIC-documentation_GUID_CMAKE:INTERNAL=9A0DAF04904F4E068A575C19
 //Stored Xcode object GUID
-NJLIC-exe_GUID_CMAKE:INTERNAL=EBBF97936A2049B59972276A
+NJLIC-exe_GUID_CMAKE:INTERNAL=D14EB15AD66A443FB2B365B5
 //Stored Xcode object GUID
-NJLIC-lua-swig-bullet3-static_GUID_CMAKE:INTERNAL=064A7EDE49FC4A8D9069A4BC
+NJLIC-lua-swig-bullet3_GUID_CMAKE:INTERNAL=6A2AA0D59A4D4477A76EF5C9
 //Stored Xcode object GUID
-NJLIC-lua-swig-glm-static_GUID_CMAKE:INTERNAL=58CB8A050C0A44D8B132C0C7
+NJLIC-lua-swig-njlic_GUID_CMAKE:INTERNAL=DD22EC036EA84112A12E9FBB
 //Stored Xcode object GUID
-NJLIC-lua-swig-njlic-static_GUID_CMAKE:INTERNAL=343CFAD2C5AD4BA1A90DDC91
+NJLIC-static_GUID_CMAKE:INTERNAL=8339B05EA5404A089E89749A
 //Stored Xcode object GUID
-NJLIC-static_GUID_CMAKE:INTERNAL=8289F8E1FAA5476F85AE9E07
-//Stored Xcode object GUID
-NJLICFramework_GUID_CMAKE:INTERNAL=3674A2530DE74584B1509788
+NJLICFramework_GUID_CMAKE:INTERNAL=BEDF2F07E9E547BAA41D257D
 //STRINGS property for variable: NJLIC_GRAPHICS_PLATFORM
 NJLIC_GRAPHICS_PLATFORM-STRINGS:INTERNAL=opengl_es_2;opengl_es_3
 //Stored Xcode object GUID
-NJLIC_GUID_CMAKE:INTERNAL=4648CC606EA944FC85FC0C7F
+NJLIC_GUID_CMAKE:INTERNAL=D57955C8F0CA4448946AD6C6
 //STRINGS property for variable: NJLIC_SOUND_PLATFORM
 NJLIC_SOUND_PLATFORM-STRINGS:INTERNAL=openal;fmod;sdl
 //ADVANCED property for variable: OGG_INCLUDE_DIR
@@ -1352,7 +1395,7 @@ OGG_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //Stored Xcode object GUID
-PROJECT_NJLIC_GUID_CMAKE:INTERNAL=BF1776C397D34952B1A6590E
+PROJECT_NJLIC_GUID_CMAKE:INTERNAL=AB2A6931133E41E69420C0A2
 //ADVANCED property for variable: SDL2_INCLUDE_DIR
 SDL2_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //CHECK_TYPE_SIZE: sizeof(size_t)
@@ -1370,17 +1413,19 @@ SWIG_VERSION-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: VORBIS_INCLUDE_DIR
 VORBIS_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //Stored Xcode object GUID
-ZERO_CHECK_GUID_CMAKE:INTERNAL=28556BCFF2364A499999782E
+ZERO_CHECK_GUID_CMAKE:INTERNAL=501E0AE2B87B46229EBE53A6
+//ADVANCED property for variable: ZLIB_INCLUDE_DIR
+ZLIB_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
-_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/install/RelWithDebInfo
+_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/install/Release
 //Stored Xcode object GUID
-clang-format_GUID_CMAKE:INTERNAL=71BC31D470CD49C89FB9ADF6
+clang-format_GUID_CMAKE:INTERNAL=4F446B4F4BA64CDE860C784C
 //Stored Xcode object GUID
-cppcheck_GUID_CMAKE:INTERNAL=F616821BE75A43149B231C35
+cppcheck_GUID_CMAKE:INTERNAL=782B7D7FC4A945E48B05FB17
 //Stored Xcode object GUID
-install_GUID_CMAKE:INTERNAL=59CD994C1F4642CF8ED43F38
+install_GUID_CMAKE:INTERNAL=E83D3526DFB14538ADFEC5D4
 //Stored Xcode object GUID
-package_GUID_CMAKE:INTERNAL=45A35F1B38AF481E81657763
+package_GUID_CMAKE:INTERNAL=B0779BCAF11A46818D9D2E38
 //Stored Xcode object GUID
-uninstall_GUID_CMAKE:INTERNAL=2978CDA379674B2BB693E71F
+uninstall_GUID_CMAKE:INTERNAL=D77AE493EFDD48D5B4EFADEC
 

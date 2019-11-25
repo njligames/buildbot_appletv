@@ -197,12 +197,6 @@ public:
 
 	virtual btTriangleIndexVertexArray* createMeshInterface(btStridingMeshInterfaceData& meshData);
 
-	virtual class btHeightfieldTerrainShape* createHeightfieldShape(int heightStickWidth, int heightStickLength,
-		const void* heightfieldData, btScalar heightScale,
-		btScalar minHeight, btScalar maxHeight,
-		int upAxis, int heightDataType,
-		bool flipQuadEdges);
-
 	///acceleration and connectivity structures
 	virtual btOptimizedBvh* createOptimizedBvh();
 	virtual btTriangleInfoMap* createTriangleInfoMap();

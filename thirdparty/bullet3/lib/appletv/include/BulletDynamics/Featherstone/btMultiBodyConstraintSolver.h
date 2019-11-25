@@ -34,7 +34,6 @@ protected:
 	btMultiBodyConstraintArray m_multiBodyNormalContactConstraints;
 	btMultiBodyConstraintArray m_multiBodyFrictionContactConstraints;
 	btMultiBodyConstraintArray m_multiBodyTorsionalFrictionContactConstraints;
-	btMultiBodyConstraintArray m_multiBodySpinningFrictionContactConstraints;
 
 	btMultiBodyJacobianData m_data;
 
@@ -54,10 +53,6 @@ protected:
 	btMultiBodySolverConstraint& addMultiBodyTorsionalFrictionConstraint(const btVector3& normalAxis, btPersistentManifold* manifold, int frictionIndex, btManifoldPoint& cp,
 																		 btScalar combinedTorsionalFriction,
 																		 btCollisionObject* colObj0, btCollisionObject* colObj1, btScalar relaxation, const btContactSolverInfo& infoGlobal, btScalar desiredVelocity = 0, btScalar cfmSlip = 0);
-
-	btMultiBodySolverConstraint& addMultiBodySpinningFrictionConstraint(const btVector3& normalAxis, btPersistentManifold* manifold, int frictionIndex, btManifoldPoint& cp,
-		btScalar combinedTorsionalFriction,
-		btCollisionObject* colObj0, btCollisionObject* colObj1, btScalar relaxation, const btContactSolverInfo& infoGlobal, btScalar desiredVelocity = 0, btScalar cfmSlip = 0);
 
 	void setupMultiBodyJointLimitConstraint(btMultiBodySolverConstraint & constraintRow,
 											btScalar * jacA, btScalar * jacB,

@@ -16,7 +16,7 @@ set(CMAKE_IMPORT_FILE_VERSION 1)
 set(_targetsDefined)
 set(_targetsNotDefined)
 set(_expectedTargets)
-foreach(_expectedTarget NJLIC::NJLIC-static NJLIC::NJLIC NJLIC::NJLICFramework NJLIC::NJLIC-lua-swig-glm-static NJLIC::NJLIC-lua-swig-bullet3-static NJLIC::NJLIC-lua-swig-njlic-static)
+foreach(_expectedTarget NJLIC::NJLIC-static NJLIC::NJLIC NJLIC::NJLICFramework NJLIC::NJLIC-lua-swig-bullet3 NJLIC::NJLIC-lua-swig-njlic)
   list(APPEND _expectedTargets ${_expectedTarget})
   if(NOT TARGET ${_expectedTarget})
     list(APPEND _targetsNotDefined ${_expectedTarget})
@@ -54,14 +54,14 @@ endif()
 add_library(NJLIC::NJLIC-static STATIC IMPORTED)
 
 set_target_properties(NJLIC::NJLIC-static PROPERTIES
-  INTERFACE_LINK_LIBRARIES "Bullet2FileLoader;Bullet3Collision;Bullet3Common;Bullet3Dynamics;Bullet3Geometry;Bullet3OpenCL_clew;BulletCollision;BulletDynamics;BulletFileLoader;BulletInverseDynamics;BulletInverseDynamicsUtils;BulletSoftBody;BulletWorldImporter;BulletXmlWorldImporter;ConvexDecomposition;GIMPACTUtils;HACD;LinearMath;imgui;ImGuizmo;ogg;vorbis;vorbisenc;vorbisfile;-framework OpenAL;-framework OpenGLES;m;iconv;-framework UIKit;-framework Foundation;-framework AVFoundation;-framework GameController;-framework CoreGraphics;-framework QuartzCore;-framework CoreVideo;-framework CoreAudio;-framework AudioToolbox;SDL2;NJLIC::NJLIC-lua-swig-njlic-static;NJLIC::NJLIC-lua-swig-bullet3-static;NJLIC::NJLIC-lua-swig-glm-static"
+  INTERFACE_LINK_LIBRARIES "Bullet2FileLoader;Bullet3Collision;Bullet3Common;Bullet3Dynamics;Bullet3Geometry;Bullet3OpenCL_clew;BulletCollision;BulletDynamics;BulletFileLoader;BulletInverseDynamics;BulletInverseDynamicsUtils;BulletSoftBody;BulletWorldImporter;BulletXmlWorldImporter;ConvexDecomposition;GIMPACTUtils;HACD;LinearMath;imgui;ImGuizmo;z;ogg;vorbis;vorbisenc;vorbisfile;-framework OpenAL;-framework OpenGLES;m;iconv;-framework UIKit;-framework Foundation;-framework AVFoundation;-framework GameController;-framework CoreGraphics;-framework QuartzCore;-framework CoreVideo;-framework CoreAudio;-framework AudioToolbox;SDL2;NJLIC::NJLIC-lua-swig-njlic;NJLIC::NJLIC-lua-swig-bullet3"
 )
 
 # Create imported target NJLIC::NJLIC
 add_library(NJLIC::NJLIC SHARED IMPORTED)
 
 set_target_properties(NJLIC::NJLIC PROPERTIES
-  INTERFACE_LINK_LIBRARIES "Bullet2FileLoader;Bullet3Collision;Bullet3Common;Bullet3Dynamics;Bullet3Geometry;Bullet3OpenCL_clew;BulletCollision;BulletDynamics;BulletFileLoader;BulletInverseDynamics;BulletInverseDynamicsUtils;BulletSoftBody;BulletWorldImporter;BulletXmlWorldImporter;ConvexDecomposition;GIMPACTUtils;HACD;LinearMath;imgui;ImGuizmo;ogg;vorbis;vorbisenc;vorbisfile;-framework OpenAL;-framework OpenGLES;m;iconv;-framework UIKit;-framework Foundation;-framework AVFoundation;-framework GameController;-framework CoreGraphics;-framework QuartzCore;-framework CoreVideo;-framework CoreAudio;-framework AudioToolbox;SDL2;NJLIC::NJLIC-lua-swig-njlic-static;NJLIC::NJLIC-lua-swig-bullet3-static;NJLIC::NJLIC-lua-swig-glm-static"
+  INTERFACE_LINK_LIBRARIES "Bullet2FileLoader;Bullet3Collision;Bullet3Common;Bullet3Dynamics;Bullet3Geometry;Bullet3OpenCL_clew;BulletCollision;BulletDynamics;BulletFileLoader;BulletInverseDynamics;BulletInverseDynamicsUtils;BulletSoftBody;BulletWorldImporter;BulletXmlWorldImporter;ConvexDecomposition;GIMPACTUtils;HACD;LinearMath;imgui;ImGuizmo;z;ogg;vorbis;vorbisenc;vorbisfile;-framework OpenAL;-framework OpenGLES;m;iconv;-framework UIKit;-framework Foundation;-framework AVFoundation;-framework GameController;-framework CoreGraphics;-framework QuartzCore;-framework CoreVideo;-framework CoreAudio;-framework AudioToolbox;SDL2;NJLIC::NJLIC-lua-swig-njlic;NJLIC::NJLIC-lua-swig-bullet3"
 )
 
 # Create imported target NJLIC::NJLICFramework
@@ -69,29 +69,20 @@ add_library(NJLIC::NJLICFramework SHARED IMPORTED)
 set_property(TARGET NJLIC::NJLICFramework PROPERTY FRAMEWORK 1)
 
 set_target_properties(NJLIC::NJLICFramework PROPERTIES
-  INTERFACE_LINK_LIBRARIES "Bullet2FileLoader;Bullet3Collision;Bullet3Common;Bullet3Dynamics;Bullet3Geometry;Bullet3OpenCL_clew;BulletCollision;BulletDynamics;BulletFileLoader;BulletInverseDynamics;BulletInverseDynamicsUtils;BulletSoftBody;BulletWorldImporter;BulletXmlWorldImporter;ConvexDecomposition;GIMPACTUtils;HACD;LinearMath;imgui;ImGuizmo;ogg;vorbis;vorbisenc;vorbisfile;-framework OpenAL;-framework OpenGLES;m;iconv;-framework UIKit;-framework Foundation;-framework AVFoundation;-framework GameController;-framework CoreGraphics;-framework QuartzCore;-framework CoreVideo;-framework CoreAudio;-framework AudioToolbox;SDL2;NJLIC::NJLIC-lua-swig-njlic-static;NJLIC::NJLIC-lua-swig-bullet3-static;NJLIC::NJLIC-lua-swig-glm-static"
+  INTERFACE_LINK_LIBRARIES "Bullet2FileLoader;Bullet3Collision;Bullet3Common;Bullet3Dynamics;Bullet3Geometry;Bullet3OpenCL_clew;BulletCollision;BulletDynamics;BulletFileLoader;BulletInverseDynamics;BulletInverseDynamicsUtils;BulletSoftBody;BulletWorldImporter;BulletXmlWorldImporter;ConvexDecomposition;GIMPACTUtils;HACD;LinearMath;imgui;ImGuizmo;z;ogg;vorbis;vorbisenc;vorbisfile;-framework OpenAL;-framework OpenGLES;m;iconv;-framework UIKit;-framework Foundation;-framework AVFoundation;-framework GameController;-framework CoreGraphics;-framework QuartzCore;-framework CoreVideo;-framework CoreAudio;-framework AudioToolbox;SDL2;NJLIC::NJLIC-lua-swig-njlic;NJLIC::NJLIC-lua-swig-bullet3"
 )
 
-# Create imported target NJLIC::NJLIC-lua-swig-glm-static
-add_library(NJLIC::NJLIC-lua-swig-glm-static STATIC IMPORTED)
+# Create imported target NJLIC::NJLIC-lua-swig-bullet3
+add_library(NJLIC::NJLIC-lua-swig-bullet3 SHARED IMPORTED)
 
-set_target_properties(NJLIC::NJLIC-lua-swig-glm-static PROPERTIES
-  INTERFACE_COMPILE_DEFINITIONS "NJLIC_SWIG=1;BT_INFINITY;BULLET3_SWIG=1;BT_INFINITY;GLM_SWIG=1;BT_INFINITY;NJLIC_SWIG=1;BT_INFINITY;BULLET3_SWIG=1;BT_INFINITY;GLM_SWIG=1;BT_INFINITY"
-  INTERFACE_LINK_LIBRARIES "NJLIC::NJLIC-static;\$<\$<NOT:\$<CONFIG:DEBUG>>:Bullet2FileLoader>;\$<\$<NOT:\$<CONFIG:DEBUG>>:Bullet3Collision>;\$<\$<NOT:\$<CONFIG:DEBUG>>:Bullet3Common>;\$<\$<NOT:\$<CONFIG:DEBUG>>:Bullet3Dynamics>;\$<\$<NOT:\$<CONFIG:DEBUG>>:Bullet3Geometry>;\$<\$<NOT:\$<CONFIG:DEBUG>>:Bullet3OpenCL_clew>;\$<\$<NOT:\$<CONFIG:DEBUG>>:BulletCollision>;\$<\$<NOT:\$<CONFIG:DEBUG>>:BulletDynamics>;\$<\$<NOT:\$<CONFIG:DEBUG>>:BulletFileLoader>;\$<\$<NOT:\$<CONFIG:DEBUG>>:BulletInverseDynamics>;\$<\$<NOT:\$<CONFIG:DEBUG>>:BulletInverseDynamicsUtils>;\$<\$<NOT:\$<CONFIG:DEBUG>>:BulletSoftBody>;\$<\$<NOT:\$<CONFIG:DEBUG>>:BulletWorldImporter>;\$<\$<NOT:\$<CONFIG:DEBUG>>:BulletXmlWorldImporter>;\$<\$<NOT:\$<CONFIG:DEBUG>>:ConvexDecomposition>;\$<\$<NOT:\$<CONFIG:DEBUG>>:GIMPACTUtils>;\$<\$<NOT:\$<CONFIG:DEBUG>>:HACD>;\$<\$<NOT:\$<CONFIG:DEBUG>>:LinearMath>;\$<\$<NOT:\$<CONFIG:DEBUG>>:imgui>;\$<\$<NOT:\$<CONFIG:DEBUG>>:ImGuizmo>;\$<\$<NOT:\$<CONFIG:DEBUG>>:ogg>;\$<\$<NOT:\$<CONFIG:DEBUG>>:vorbis>;\$<\$<NOT:\$<CONFIG:DEBUG>>:vorbisenc>;\$<\$<NOT:\$<CONFIG:DEBUG>>:vorbisfile>;\$<\$<NOT:\$<CONFIG:DEBUG>>:-framework OpenAL>;\$<\$<NOT:\$<CONFIG:DEBUG>>:-framework OpenGLES>;\$<\$<NOT:\$<CONFIG:DEBUG>>:m>;\$<\$<NOT:\$<CONFIG:DEBUG>>:iconv>;\$<\$<NOT:\$<CONFIG:DEBUG>>:-framework UIKit>;\$<\$<NOT:\$<CONFIG:DEBUG>>:-framework Foundation>;\$<\$<NOT:\$<CONFIG:DEBUG>>:-framework AVFoundation>;\$<\$<NOT:\$<CONFIG:DEBUG>>:-framework GameController>;\$<\$<NOT:\$<CONFIG:DEBUG>>:-framework CoreGraphics>;\$<\$<NOT:\$<CONFIG:DEBUG>>:-framework QuartzCore>;\$<\$<NOT:\$<CONFIG:DEBUG>>:-framework CoreVideo>;\$<\$<NOT:\$<CONFIG:DEBUG>>:-framework CoreAudio>;\$<\$<NOT:\$<CONFIG:DEBUG>>:-framework AudioToolbox>;\$<\$<NOT:\$<CONFIG:DEBUG>>:SDL2>;\$<\$<NOT:\$<CONFIG:DEBUG>>:NJLIC-lua-swig-njlic-static>;\$<\$<NOT:\$<CONFIG:DEBUG>>:NJLIC-lua-swig-bullet3-static>"
-)
-
-# Create imported target NJLIC::NJLIC-lua-swig-bullet3-static
-add_library(NJLIC::NJLIC-lua-swig-bullet3-static STATIC IMPORTED)
-
-set_target_properties(NJLIC::NJLIC-lua-swig-bullet3-static PROPERTIES
+set_target_properties(NJLIC::NJLIC-lua-swig-bullet3 PROPERTIES
   INTERFACE_COMPILE_DEFINITIONS "NJLIC_SWIG=1;BT_INFINITY;BULLET3_SWIG=1;BT_INFINITY;NJLIC_SWIG=1;BT_INFINITY;BULLET3_SWIG=1;BT_INFINITY"
-  INTERFACE_LINK_LIBRARIES "NJLIC::NJLIC-static;\$<\$<NOT:\$<CONFIG:DEBUG>>:Bullet2FileLoader>;\$<\$<NOT:\$<CONFIG:DEBUG>>:Bullet3Collision>;\$<\$<NOT:\$<CONFIG:DEBUG>>:Bullet3Common>;\$<\$<NOT:\$<CONFIG:DEBUG>>:Bullet3Dynamics>;\$<\$<NOT:\$<CONFIG:DEBUG>>:Bullet3Geometry>;\$<\$<NOT:\$<CONFIG:DEBUG>>:Bullet3OpenCL_clew>;\$<\$<NOT:\$<CONFIG:DEBUG>>:BulletCollision>;\$<\$<NOT:\$<CONFIG:DEBUG>>:BulletDynamics>;\$<\$<NOT:\$<CONFIG:DEBUG>>:BulletFileLoader>;\$<\$<NOT:\$<CONFIG:DEBUG>>:BulletInverseDynamics>;\$<\$<NOT:\$<CONFIG:DEBUG>>:BulletInverseDynamicsUtils>;\$<\$<NOT:\$<CONFIG:DEBUG>>:BulletSoftBody>;\$<\$<NOT:\$<CONFIG:DEBUG>>:BulletWorldImporter>;\$<\$<NOT:\$<CONFIG:DEBUG>>:BulletXmlWorldImporter>;\$<\$<NOT:\$<CONFIG:DEBUG>>:ConvexDecomposition>;\$<\$<NOT:\$<CONFIG:DEBUG>>:GIMPACTUtils>;\$<\$<NOT:\$<CONFIG:DEBUG>>:HACD>;\$<\$<NOT:\$<CONFIG:DEBUG>>:LinearMath>;\$<\$<NOT:\$<CONFIG:DEBUG>>:imgui>;\$<\$<NOT:\$<CONFIG:DEBUG>>:ImGuizmo>;\$<\$<NOT:\$<CONFIG:DEBUG>>:ogg>;\$<\$<NOT:\$<CONFIG:DEBUG>>:vorbis>;\$<\$<NOT:\$<CONFIG:DEBUG>>:vorbisenc>;\$<\$<NOT:\$<CONFIG:DEBUG>>:vorbisfile>;\$<\$<NOT:\$<CONFIG:DEBUG>>:-framework OpenAL>;\$<\$<NOT:\$<CONFIG:DEBUG>>:-framework OpenGLES>;\$<\$<NOT:\$<CONFIG:DEBUG>>:m>;\$<\$<NOT:\$<CONFIG:DEBUG>>:iconv>;\$<\$<NOT:\$<CONFIG:DEBUG>>:-framework UIKit>;\$<\$<NOT:\$<CONFIG:DEBUG>>:-framework Foundation>;\$<\$<NOT:\$<CONFIG:DEBUG>>:-framework AVFoundation>;\$<\$<NOT:\$<CONFIG:DEBUG>>:-framework GameController>;\$<\$<NOT:\$<CONFIG:DEBUG>>:-framework CoreGraphics>;\$<\$<NOT:\$<CONFIG:DEBUG>>:-framework QuartzCore>;\$<\$<NOT:\$<CONFIG:DEBUG>>:-framework CoreVideo>;\$<\$<NOT:\$<CONFIG:DEBUG>>:-framework CoreAudio>;\$<\$<NOT:\$<CONFIG:DEBUG>>:-framework AudioToolbox>;\$<\$<NOT:\$<CONFIG:DEBUG>>:SDL2>;\$<\$<NOT:\$<CONFIG:DEBUG>>:NJLIC-lua-swig-njlic-static>"
 )
 
-# Create imported target NJLIC::NJLIC-lua-swig-njlic-static
-add_library(NJLIC::NJLIC-lua-swig-njlic-static STATIC IMPORTED)
+# Create imported target NJLIC::NJLIC-lua-swig-njlic
+add_library(NJLIC::NJLIC-lua-swig-njlic SHARED IMPORTED)
 
-set_target_properties(NJLIC::NJLIC-lua-swig-njlic-static PROPERTIES
+set_target_properties(NJLIC::NJLIC-lua-swig-njlic PROPERTIES
   INTERFACE_COMPILE_DEFINITIONS "NJLIC_SWIG=1;BT_INFINITY;NJLIC_SWIG=1;BT_INFINITY"
 )
 

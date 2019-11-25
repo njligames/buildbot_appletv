@@ -582,6 +582,7 @@ inline btScalar wilkinsonShift(const btScalar a1, const btScalar b1, const btSca
     // T mu = a2 - bs / ( d + sign_d*sqrt (d*d + bs));
     return mu;
   }
+    return 0;
 }
 
 /**

@@ -36,10 +36,6 @@ public:
 	btMultiBody* m_multiBody;
 	int m_link;
 
-	virtual ~btMultiBodyLinkCollider()
-	{
-
-	}
 	btMultiBodyLinkCollider(btMultiBody* multiBody, int link)
 		: m_multiBody(multiBody),
 		  m_link(link)
