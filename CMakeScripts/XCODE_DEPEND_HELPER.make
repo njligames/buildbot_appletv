@@ -8,8 +8,8 @@ default:
 # link.  This forces Xcode to relink the targets from scratch.  It
 # does not seem to check these dependencies itself.
 PostBuild.NJLIC.Debug:
-PostBuild.NJLIC-lua-swig-njlic.Debug: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLICd.dylib
-PostBuild.NJLIC-lua-swig-bullet3.Debug: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLICd.dylib
+PostBuild.NJLIC-lua-swig-njlic-static.Debug: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLICd.dylib
+PostBuild.NJLIC-lua-swig-bullet3-static.Debug: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLICd.dylib
 /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLICd.dylib:\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/bullet3/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libBullet2FileLoader.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/bullet3/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libBullet3Collision.a\
@@ -37,14 +37,14 @@ PostBuild.NJLIC-lua-swig-bullet3.Debug: /Users/jamesfolk/Work/test_project_repo/
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/vorbis/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libvorbisenc.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/vorbis/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libvorbisfile.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/sdl2/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libSDL2.a\
-	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlicd.dylib\
-	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3d.dylib
+	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic-staticd.a\
+	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3-staticd.a
 	/bin/rm -f /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLICd.dylib
 
 
 PostBuild.NJLIC-exe.Debug:
-PostBuild.NJLIC-lua-swig-njlic.Debug: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/YappyBirds.app/YappyBirds
-PostBuild.NJLIC-lua-swig-bullet3.Debug: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/YappyBirds.app/YappyBirds
+PostBuild.NJLIC-lua-swig-njlic-static.Debug: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/YappyBirds.app/YappyBirds
+PostBuild.NJLIC-lua-swig-bullet3-static.Debug: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/YappyBirds.app/YappyBirds
 /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/YappyBirds.app/YappyBirds:\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/bullet3/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libBullet3Collision.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/bullet3/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libBullet3Common.a\
@@ -71,19 +71,19 @@ PostBuild.NJLIC-lua-swig-bullet3.Debug: /Users/jamesfolk/Work/test_project_repo/
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/vorbis/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libvorbisenc.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/vorbis/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libvorbisfile.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/sdl2/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libSDL2.a\
-	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlicd.dylib\
-	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3d.dylib
+	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic-staticd.a\
+	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3-staticd.a
 	/bin/rm -f /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/YappyBirds.app/YappyBirds
 
 
-PostBuild.NJLIC-lua-swig-bullet3.Debug:
-/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3d.dylib:
-	/bin/rm -f /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3d.dylib
+PostBuild.NJLIC-lua-swig-bullet3-static.Debug:
+/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3-staticd.a:
+	/bin/rm -f /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3-staticd.a
 
 
-PostBuild.NJLIC-lua-swig-njlic.Debug:
-/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlicd.dylib:
-	/bin/rm -f /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlicd.dylib
+PostBuild.NJLIC-lua-swig-njlic-static.Debug:
+/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic-staticd.a:
+	/bin/rm -f /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic-staticd.a
 
 
 PostBuild.NJLIC-static.Debug:
@@ -92,8 +92,8 @@ PostBuild.NJLIC-static.Debug:
 
 
 PostBuild.NJLICFramework.Debug:
-PostBuild.NJLIC-lua-swig-njlic.Debug: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/NJLICFramework.framework/NJLICFramework
-PostBuild.NJLIC-lua-swig-bullet3.Debug: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/NJLICFramework.framework/NJLICFramework
+PostBuild.NJLIC-lua-swig-njlic-static.Debug: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/NJLICFramework.framework/NJLICFramework
+PostBuild.NJLIC-lua-swig-bullet3-static.Debug: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/NJLICFramework.framework/NJLICFramework
 /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/NJLICFramework.framework/NJLICFramework:\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/bullet3/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libBullet2FileLoader.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/bullet3/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libBullet3Collision.a\
@@ -121,14 +121,14 @@ PostBuild.NJLIC-lua-swig-bullet3.Debug: /Users/jamesfolk/Work/test_project_repo/
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/vorbis/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libvorbisenc.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/vorbis/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libvorbisfile.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/sdl2/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libSDL2.a\
-	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlicd.dylib\
-	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3d.dylib
+	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic-staticd.a\
+	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3-staticd.a
 	/bin/rm -f /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/NJLICFramework.framework/NJLICFramework
 
 
 PostBuild.NJLIC.Release:
-PostBuild.NJLIC-lua-swig-njlic.Release: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC.dylib
-PostBuild.NJLIC-lua-swig-bullet3.Release: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC.dylib
+PostBuild.NJLIC-lua-swig-njlic-static.Release: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC.dylib
+PostBuild.NJLIC-lua-swig-bullet3-static.Release: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC.dylib
 /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC.dylib:\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/bullet3/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libBullet2FileLoader.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/bullet3/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libBullet3Collision.a\
@@ -156,14 +156,14 @@ PostBuild.NJLIC-lua-swig-bullet3.Release: /Users/jamesfolk/Work/test_project_rep
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/vorbis/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libvorbisenc.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/vorbis/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libvorbisfile.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/sdl2/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libSDL2.a\
-	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic.dylib\
-	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3.dylib
+	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic-static.a\
+	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3-static.a
 	/bin/rm -f /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC.dylib
 
 
 PostBuild.NJLIC-exe.Release:
-PostBuild.NJLIC-lua-swig-njlic.Release: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/YappyBirds.app/YappyBirds
-PostBuild.NJLIC-lua-swig-bullet3.Release: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/YappyBirds.app/YappyBirds
+PostBuild.NJLIC-lua-swig-njlic-static.Release: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/YappyBirds.app/YappyBirds
+PostBuild.NJLIC-lua-swig-bullet3-static.Release: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/YappyBirds.app/YappyBirds
 /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/YappyBirds.app/YappyBirds:\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/bullet3/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libBullet2FileLoader.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/bullet3/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libBullet3Collision.a\
@@ -191,19 +191,19 @@ PostBuild.NJLIC-lua-swig-bullet3.Release: /Users/jamesfolk/Work/test_project_rep
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/vorbis/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libvorbisenc.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/vorbis/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libvorbisfile.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/sdl2/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libSDL2.a\
-	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic.dylib\
-	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3.dylib
+	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic-static.a\
+	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3-static.a
 	/bin/rm -f /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/YappyBirds.app/YappyBirds
 
 
-PostBuild.NJLIC-lua-swig-bullet3.Release:
-/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3.dylib:
-	/bin/rm -f /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3.dylib
+PostBuild.NJLIC-lua-swig-bullet3-static.Release:
+/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3-static.a:
+	/bin/rm -f /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3-static.a
 
 
-PostBuild.NJLIC-lua-swig-njlic.Release:
-/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic.dylib:
-	/bin/rm -f /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic.dylib
+PostBuild.NJLIC-lua-swig-njlic-static.Release:
+/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic-static.a:
+	/bin/rm -f /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic-static.a
 
 
 PostBuild.NJLIC-static.Release:
@@ -212,8 +212,8 @@ PostBuild.NJLIC-static.Release:
 
 
 PostBuild.NJLICFramework.Release:
-PostBuild.NJLIC-lua-swig-njlic.Release: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/NJLICFramework.framework/NJLICFramework
-PostBuild.NJLIC-lua-swig-bullet3.Release: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/NJLICFramework.framework/NJLICFramework
+PostBuild.NJLIC-lua-swig-njlic-static.Release: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/NJLICFramework.framework/NJLICFramework
+PostBuild.NJLIC-lua-swig-bullet3-static.Release: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/NJLICFramework.framework/NJLICFramework
 /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/NJLICFramework.framework/NJLICFramework:\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/bullet3/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libBullet2FileLoader.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/bullet3/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libBullet3Collision.a\
@@ -241,14 +241,14 @@ PostBuild.NJLIC-lua-swig-bullet3.Release: /Users/jamesfolk/Work/test_project_rep
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/vorbis/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libvorbisenc.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/vorbis/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libvorbisfile.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/sdl2/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libSDL2.a\
-	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic.dylib\
-	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3.dylib
+	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic-static.a\
+	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3-static.a
 	/bin/rm -f /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/NJLICFramework.framework/NJLICFramework
 
 
 PostBuild.NJLIC.MinSizeRel:
-PostBuild.NJLIC-lua-swig-njlic.MinSizeRel: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC.dylib
-PostBuild.NJLIC-lua-swig-bullet3.MinSizeRel: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC.dylib
+PostBuild.NJLIC-lua-swig-njlic-static.MinSizeRel: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC.dylib
+PostBuild.NJLIC-lua-swig-bullet3-static.MinSizeRel: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC.dylib
 /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC.dylib:\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/bullet3/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libBullet2FileLoader.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/bullet3/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libBullet3Collision.a\
@@ -276,14 +276,14 @@ PostBuild.NJLIC-lua-swig-bullet3.MinSizeRel: /Users/jamesfolk/Work/test_project_
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/vorbis/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libvorbisenc.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/vorbis/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libvorbisfile.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/sdl2/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libSDL2.a\
-	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic.dylib\
-	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3.dylib
+	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic-static.a\
+	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3-static.a
 	/bin/rm -f /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC.dylib
 
 
 PostBuild.NJLIC-exe.MinSizeRel:
-PostBuild.NJLIC-lua-swig-njlic.MinSizeRel: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/YappyBirds.app/YappyBirds
-PostBuild.NJLIC-lua-swig-bullet3.MinSizeRel: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/YappyBirds.app/YappyBirds
+PostBuild.NJLIC-lua-swig-njlic-static.MinSizeRel: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/YappyBirds.app/YappyBirds
+PostBuild.NJLIC-lua-swig-bullet3-static.MinSizeRel: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/YappyBirds.app/YappyBirds
 /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/YappyBirds.app/YappyBirds:\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/bullet3/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libBullet2FileLoader.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/bullet3/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libBullet3Collision.a\
@@ -311,19 +311,19 @@ PostBuild.NJLIC-lua-swig-bullet3.MinSizeRel: /Users/jamesfolk/Work/test_project_
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/vorbis/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libvorbisenc.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/vorbis/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libvorbisfile.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/sdl2/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libSDL2.a\
-	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic.dylib\
-	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3.dylib
+	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic-static.a\
+	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3-static.a
 	/bin/rm -f /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/YappyBirds.app/YappyBirds
 
 
-PostBuild.NJLIC-lua-swig-bullet3.MinSizeRel:
-/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3.dylib:
-	/bin/rm -f /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3.dylib
+PostBuild.NJLIC-lua-swig-bullet3-static.MinSizeRel:
+/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3-static.a:
+	/bin/rm -f /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3-static.a
 
 
-PostBuild.NJLIC-lua-swig-njlic.MinSizeRel:
-/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic.dylib:
-	/bin/rm -f /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic.dylib
+PostBuild.NJLIC-lua-swig-njlic-static.MinSizeRel:
+/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic-static.a:
+	/bin/rm -f /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic-static.a
 
 
 PostBuild.NJLIC-static.MinSizeRel:
@@ -332,8 +332,8 @@ PostBuild.NJLIC-static.MinSizeRel:
 
 
 PostBuild.NJLICFramework.MinSizeRel:
-PostBuild.NJLIC-lua-swig-njlic.MinSizeRel: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/NJLICFramework.framework/NJLICFramework
-PostBuild.NJLIC-lua-swig-bullet3.MinSizeRel: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/NJLICFramework.framework/NJLICFramework
+PostBuild.NJLIC-lua-swig-njlic-static.MinSizeRel: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/NJLICFramework.framework/NJLICFramework
+PostBuild.NJLIC-lua-swig-bullet3-static.MinSizeRel: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/NJLICFramework.framework/NJLICFramework
 /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/NJLICFramework.framework/NJLICFramework:\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/bullet3/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libBullet2FileLoader.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/bullet3/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libBullet3Collision.a\
@@ -361,14 +361,14 @@ PostBuild.NJLIC-lua-swig-bullet3.MinSizeRel: /Users/jamesfolk/Work/test_project_
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/vorbis/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libvorbisenc.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/vorbis/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libvorbisfile.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/sdl2/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libSDL2.a\
-	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic.dylib\
-	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3.dylib
+	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic-static.a\
+	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3-static.a
 	/bin/rm -f /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/NJLICFramework.framework/NJLICFramework
 
 
 PostBuild.NJLIC.RelWithDebInfo:
-PostBuild.NJLIC-lua-swig-njlic.RelWithDebInfo: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC.dylib
-PostBuild.NJLIC-lua-swig-bullet3.RelWithDebInfo: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC.dylib
+PostBuild.NJLIC-lua-swig-njlic-static.RelWithDebInfo: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC.dylib
+PostBuild.NJLIC-lua-swig-bullet3-static.RelWithDebInfo: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC.dylib
 /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC.dylib:\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/bullet3/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libBullet2FileLoader.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/bullet3/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libBullet3Collision.a\
@@ -396,14 +396,14 @@ PostBuild.NJLIC-lua-swig-bullet3.RelWithDebInfo: /Users/jamesfolk/Work/test_proj
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/vorbis/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libvorbisenc.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/vorbis/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libvorbisfile.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/sdl2/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libSDL2.a\
-	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic.dylib\
-	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3.dylib
+	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic-static.a\
+	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3-static.a
 	/bin/rm -f /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC.dylib
 
 
 PostBuild.NJLIC-exe.RelWithDebInfo:
-PostBuild.NJLIC-lua-swig-njlic.RelWithDebInfo: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/YappyBirds.app/YappyBirds
-PostBuild.NJLIC-lua-swig-bullet3.RelWithDebInfo: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/YappyBirds.app/YappyBirds
+PostBuild.NJLIC-lua-swig-njlic-static.RelWithDebInfo: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/YappyBirds.app/YappyBirds
+PostBuild.NJLIC-lua-swig-bullet3-static.RelWithDebInfo: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/YappyBirds.app/YappyBirds
 /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/YappyBirds.app/YappyBirds:\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/bullet3/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libBullet2FileLoader.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/bullet3/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libBullet3Collision.a\
@@ -431,19 +431,19 @@ PostBuild.NJLIC-lua-swig-bullet3.RelWithDebInfo: /Users/jamesfolk/Work/test_proj
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/vorbis/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libvorbisenc.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/vorbis/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libvorbisfile.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/sdl2/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libSDL2.a\
-	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic.dylib\
-	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3.dylib
+	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic-static.a\
+	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3-static.a
 	/bin/rm -f /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/YappyBirds.app/YappyBirds
 
 
-PostBuild.NJLIC-lua-swig-bullet3.RelWithDebInfo:
-/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3.dylib:
-	/bin/rm -f /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3.dylib
+PostBuild.NJLIC-lua-swig-bullet3-static.RelWithDebInfo:
+/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3-static.a:
+	/bin/rm -f /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3-static.a
 
 
-PostBuild.NJLIC-lua-swig-njlic.RelWithDebInfo:
-/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic.dylib:
-	/bin/rm -f /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic.dylib
+PostBuild.NJLIC-lua-swig-njlic-static.RelWithDebInfo:
+/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic-static.a:
+	/bin/rm -f /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic-static.a
 
 
 PostBuild.NJLIC-static.RelWithDebInfo:
@@ -452,8 +452,8 @@ PostBuild.NJLIC-static.RelWithDebInfo:
 
 
 PostBuild.NJLICFramework.RelWithDebInfo:
-PostBuild.NJLIC-lua-swig-njlic.RelWithDebInfo: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/NJLICFramework.framework/NJLICFramework
-PostBuild.NJLIC-lua-swig-bullet3.RelWithDebInfo: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/NJLICFramework.framework/NJLICFramework
+PostBuild.NJLIC-lua-swig-njlic-static.RelWithDebInfo: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/NJLICFramework.framework/NJLICFramework
+PostBuild.NJLIC-lua-swig-bullet3-static.RelWithDebInfo: /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/NJLICFramework.framework/NJLICFramework
 /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/NJLICFramework.framework/NJLICFramework:\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/bullet3/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libBullet2FileLoader.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/bullet3/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libBullet3Collision.a\
@@ -481,22 +481,22 @@ PostBuild.NJLIC-lua-swig-bullet3.RelWithDebInfo: /Users/jamesfolk/Work/test_proj
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/vorbis/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libvorbisenc.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/vorbis/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libvorbisfile.a\
 	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/sdl2/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libSDL2.a\
-	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic.dylib\
-	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3.dylib
+	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic-static.a\
+	/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3-static.a
 	/bin/rm -f /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/NJLICFramework.framework/NJLICFramework
 
 
 
 
 # For each target create a dummy ruleso the target does not have to exist
-/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3d.dylib:
-/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlicd.dylib:
-/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3.dylib:
-/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic.dylib:
-/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3.dylib:
-/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic.dylib:
-/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3.dylib:
-/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic.dylib:
+/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3-staticd.a:
+/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic-staticd.a:
+/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3-static.a:
+/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic-static.a:
+/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3-static.a:
+/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic-static.a:
+/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3-static.a:
+/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic-static.a:
 /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/ImGuizmo/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libImGuizmo.a:
 /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/bullet3/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libBullet2FileLoader.a:
 /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/thirdparty/bullet3/lib/appletv/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/libBullet3Collision.a:

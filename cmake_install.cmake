@@ -73,9 +73,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLICd.dylib")
     if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLICd.dylib" AND
        NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLICd.dylib")
-      execute_process(COMMAND /usr/bin/install_name_tool
-        -delete_rpath "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}"
-        "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLICd.dylib")
       if(CMAKE_INSTALL_DO_STRIP)
         execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLICd.dylib")
       endif()
@@ -84,9 +81,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC.dylib")
     if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC.dylib" AND
        NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC.dylib")
-      execute_process(COMMAND /usr/bin/install_name_tool
-        -delete_rpath "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}"
-        "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC.dylib")
       if(CMAKE_INSTALL_DO_STRIP)
         execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC.dylib")
       endif()
@@ -95,9 +89,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC.dylib")
     if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC.dylib" AND
        NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC.dylib")
-      execute_process(COMMAND /usr/bin/install_name_tool
-        -delete_rpath "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}"
-        "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC.dylib")
       if(CMAKE_INSTALL_DO_STRIP)
         execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC.dylib")
       endif()
@@ -106,9 +97,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC.dylib")
     if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC.dylib" AND
        NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC.dylib")
-      execute_process(COMMAND /usr/bin/install_name_tool
-        -delete_rpath "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}"
-        "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC.dylib")
       if(CMAKE_INSTALL_DO_STRIP)
         execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC.dylib")
       endif()
@@ -129,9 +117,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/framework" TYPE DIRECTORY FILES "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/NJLICFramework.framework" USE_SOURCE_PERMISSIONS)
     if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/framework/NJLICFramework.framework/NJLICFramework" AND
        NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/framework/NJLICFramework.framework/NJLICFramework")
-      execute_process(COMMAND /usr/bin/install_name_tool
-        -delete_rpath "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}"
-        "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/framework/NJLICFramework.framework/NJLICFramework")
       if(CMAKE_INSTALL_DO_STRIP)
         execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/framework/NJLICFramework.framework/NJLICFramework")
       endif()
@@ -140,9 +125,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/framework" TYPE DIRECTORY FILES "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/NJLICFramework.framework" USE_SOURCE_PERMISSIONS)
     if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/framework/NJLICFramework.framework/NJLICFramework" AND
        NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/framework/NJLICFramework.framework/NJLICFramework")
-      execute_process(COMMAND /usr/bin/install_name_tool
-        -delete_rpath "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}"
-        "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/framework/NJLICFramework.framework/NJLICFramework")
       if(CMAKE_INSTALL_DO_STRIP)
         execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/framework/NJLICFramework.framework/NJLICFramework")
       endif()
@@ -151,9 +133,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/framework" TYPE DIRECTORY FILES "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/NJLICFramework.framework" USE_SOURCE_PERMISSIONS)
     if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/framework/NJLICFramework.framework/NJLICFramework" AND
        NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/framework/NJLICFramework.framework/NJLICFramework")
-      execute_process(COMMAND /usr/bin/install_name_tool
-        -delete_rpath "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}"
-        "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/framework/NJLICFramework.framework/NJLICFramework")
       if(CMAKE_INSTALL_DO_STRIP)
         execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/framework/NJLICFramework.framework/NJLICFramework")
       endif()
@@ -162,9 +141,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/framework" TYPE DIRECTORY FILES "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/NJLICFramework.framework" USE_SOURCE_PERMISSIONS)
     if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/framework/NJLICFramework.framework/NJLICFramework" AND
        NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/framework/NJLICFramework.framework/NJLICFramework")
-      execute_process(COMMAND /usr/bin/install_name_tool
-        -delete_rpath "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}"
-        "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/framework/NJLICFramework.framework/NJLICFramework")
       if(CMAKE_INSTALL_DO_STRIP)
         execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/framework/NJLICFramework.framework/NJLICFramework")
       endif()
@@ -174,89 +150,57 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3d.dylib")
-    if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-bullet3d.dylib" AND
-       NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-bullet3d.dylib")
-      if(CMAKE_INSTALL_DO_STRIP)
-        execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-bullet3d.dylib")
-      endif()
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3-staticd.a")
+    if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-bullet3-staticd.a" AND
+       NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-bullet3-staticd.a")
+      execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-bullet3-staticd.a")
     endif()
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3.dylib")
-    if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-bullet3.dylib" AND
-       NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-bullet3.dylib")
-      if(CMAKE_INSTALL_DO_STRIP)
-        execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-bullet3.dylib")
-      endif()
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3-static.a")
+    if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-bullet3-static.a" AND
+       NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-bullet3-static.a")
+      execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-bullet3-static.a")
     endif()
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3.dylib")
-    if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-bullet3.dylib" AND
-       NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-bullet3.dylib")
-      if(CMAKE_INSTALL_DO_STRIP)
-        execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-bullet3.dylib")
-      endif()
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3-static.a")
+    if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-bullet3-static.a" AND
+       NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-bullet3-static.a")
+      execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-bullet3-static.a")
     endif()
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3.dylib")
-    if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-bullet3.dylib" AND
-       NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-bullet3.dylib")
-      if(CMAKE_INSTALL_DO_STRIP)
-        execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-bullet3.dylib")
-      endif()
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-bullet3-static.a")
+    if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-bullet3-static.a" AND
+       NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-bullet3-static.a")
+      execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-bullet3-static.a")
     endif()
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-  elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-  elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-  elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-  endif()
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlicd.dylib")
-    if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-njlicd.dylib" AND
-       NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-njlicd.dylib")
-      if(CMAKE_INSTALL_DO_STRIP)
-        execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-njlicd.dylib")
-      endif()
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Debug${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic-staticd.a")
+    if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-njlic-staticd.a" AND
+       NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-njlic-staticd.a")
+      execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-njlic-staticd.a")
     endif()
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic.dylib")
-    if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-njlic.dylib" AND
-       NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-njlic.dylib")
-      if(CMAKE_INSTALL_DO_STRIP)
-        execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-njlic.dylib")
-      endif()
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/Release${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic-static.a")
+    if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-njlic-static.a" AND
+       NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-njlic-static.a")
+      execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-njlic-static.a")
     endif()
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic.dylib")
-    if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-njlic.dylib" AND
-       NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-njlic.dylib")
-      if(CMAKE_INSTALL_DO_STRIP)
-        execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-njlic.dylib")
-      endif()
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/MinSizeRel${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic-static.a")
+    if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-njlic-static.a" AND
+       NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-njlic-static.a")
+      execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-njlic-static.a")
     endif()
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic.dylib")
-    if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-njlic.dylib" AND
-       NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-njlic.dylib")
-      if(CMAKE_INSTALL_DO_STRIP)
-        execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-njlic.dylib")
-      endif()
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}/libNJLIC-lua-swig-njlic-static.a")
+    if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-njlic-static.a" AND
+       NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-njlic-static.a")
+      execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libNJLIC-lua-swig-njlic-static.a")
     endif()
-  endif()
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-  elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-  elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-  elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
   endif()
 endif()
 

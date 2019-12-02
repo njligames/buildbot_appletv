@@ -9505,8 +9505,8 @@
 /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/install/Release/framework/NJLICFramework.framework/NJLICFramework
 /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/install/Release/framework/NJLICFramework.framework/Headers/Engine.h
 /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/install/Release/framework/NJLICFramework.framework/Info.plist
-/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/install/Release/lib/libNJLIC-lua-swig-bullet3.dylib
-/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/install/Release/lib/libNJLIC-lua-swig-njlic.dylib
+/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/install/Release/lib/libNJLIC-lua-swig-bullet3-static.a
+/Users/jamesfolk/Work/test_project_repo/buildbot_appletv/install/Release/lib/libNJLIC-lua-swig-njlic-static.a
 /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/install/Release/lib/cmake/NJLIC/NJLICTargets.cmake
 /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/install/Release/lib/cmake/NJLIC/NJLICTargets-release.cmake
 /Users/jamesfolk/Work/test_project_repo/buildbot_appletv/install/Release/lib/cmake/NJLIC/NJLICConfig.cmake
